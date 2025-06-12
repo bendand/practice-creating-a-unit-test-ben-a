@@ -3,8 +3,7 @@ package org.example;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class MultiplyTests {
-
+public class MultiplyTest {
     @Test
     public void testMultiplyPositiveCase() {
         assertEquals(2, Multiplication.multiply(1, 2));
@@ -18,6 +17,6 @@ public class MultiplyTests {
 
     @Test
     public void testExceptionalCase() {
-         assertThrows(ArithmeticException.class, () -> { Multiplication.multiply(Integer.MAX_VALUE, 1); });
+         assertThrows(ArithmeticException.class, () -> { Multiplication.multiply(Integer.MAX_VALUE, 2); });
     }
 }
